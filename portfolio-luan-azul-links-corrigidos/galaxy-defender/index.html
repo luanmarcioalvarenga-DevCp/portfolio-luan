@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Defender</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header><div><span class="eyebrow">ARCADE • SPACE SHOOTER</span><h1>GALAXY <em>DEFENDER</em></h1></div><button id="soundBtn" aria-label="Ativar ou desativar som">🔊 SOM</button></header>
+    <section class="hud" aria-label="Placar"><div>PONTOS <strong id="score">0</strong></div><div>RECORDE <strong id="best">0</strong></div><div>NÍVEL <strong id="level">1</strong></div><div>VIDAS <strong id="lives">♥ ♥ ♥</strong></div></section>
+    <div class="arena"><canvas id="game" width="480" height="640" aria-label="Área do jogo espacial"></canvas><div id="overlay" class="overlay"><div class="panel"><span class="eyebrow">A GALÁXIA PRECISA DE VOCÊ</span><h2 id="overlayTitle">PRONTO PARA A MISSÃO?</h2><p id="overlayText">Desvie dos inimigos, dispare lasers e sobreviva aos chefões.</p><button id="startBtn">▶ INICIAR MISSÃO</button></div></div></div>
+    <footer><span>⌨️ WASD / SETAS: MOVER</span><span>ESPAÇO: ATIRAR</span><span>P: PAUSAR</span></footer>
+    <div class="mobile-controls" aria-label="Controles para toque"><button data-move="left">◀</button><button data-move="up">▲</button><button data-move="down">▼</button><button data-move="right">▶</button><button id="fireBtn">⚡ ATIRAR</button></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

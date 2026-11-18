@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vida+ | Minha Saúde</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💚 Vida+</h1>
+    <p>Seu acompanhamento diário de saúde e bem-estar</p>
+  </header>
+
+  <main>
+    <h2>Meu painel de saúde</h2>
+
+    <section class="cards">
+      <article class="card">
+        <h3>💧 Água</h3>
+        <strong id="aguaTotal">0 ml</strong>
+        <p>Meta: 2000 ml</p>
+        <button onclick="adicionarAgua()">+ 250 ml</button>
+      </article>
+
+      <article class="card">
+        <h3>⚖️ Peso</h3>
+        <strong id="pesoAtual">-- kg</strong>
+        <p>Último peso registrado</p>
+      </article>
+
+      <article class="card">
+        <h3>😴 Sono</h3>
+        <strong id="sonoAtual">-- h</strong>
+        <p>Horas de sono</p>
+      </article>
+
+      <article class="card">
+        <h3>🏃 Exercícios</h3>
+        <strong id="exercicioAtual">0 min</strong>
+        <p>Atividade física do dia</p>
+      </article>
+    </section>
+
+    <section class="formulario">
+      <h2>📝 Registrar minha saúde</h2>
+
+      <form id="formSaude">
+        <label for="data">Data</label>
+        <input type="date" id="data" required>
+
+        <label for="peso">Peso (kg)</label>
+        <input type="number" id="peso" min="1"
+          max="500" step="0.1" placeholder="Ex: 70.5">
+
+        <label for="sono">Horas de sono</label>
+        <input type="number" id="sono" min="0"
+          max="24" step="0.5" placeholder="Ex: 8">
+
+        <label for="exercicio">Exercícios (minutos)</label>
+        <input type="number" id="exercicio" min="0"
+          max="1440" placeholder="Ex: 30">
+
+        <label for="humor">Como você está hoje?</label>
+        <select id="humor">
+          <option value="Feliz">😊 Feliz</option>
+          <option value="Normal">😐 Normal</option>
+          <option value="Cansado">😴 Cansado</option>
+          <option value="Triste">😔 Triste</option>
+        </select>
+
+        <label for="alimentacao">Alimentação do dia</label>
+        <textarea id="alimentacao" rows="3"
+          placeholder="O que você comeu hoje?"></textarea>
+
+        <button type="submit">Salvar registro</button>
+      </form>
+    </section>
+
+    <section class="historico">
+      <h2>📊 Histórico de saúde</h2>
+      <div id="listaHistorico"></div>
+    </section>
+  </main>
+
+  <footer>
+    Vida+ — Cuide de você todos os dias 💚
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

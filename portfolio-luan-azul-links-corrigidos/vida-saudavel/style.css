@@ -1,0 +1,121 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f7f5;
+  color: #243b35;
+}
+
+header {
+  background: linear-gradient(120deg, #008f73, #30bd94);
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.card, .formulario, .historico {
+  background: white;
+  padding: 24px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #00000010;
+}
+
+.card {
+  text-align: center;
+}
+
+.card strong {
+  display: block;
+  font-size: 27px;
+  color: #008f73;
+  margin: 15px 0;
+}
+
+.card p {
+  color: #64746e;
+}
+
+button {
+  background: #008f73;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #006b57;
+}
+
+.formulario, .historico {
+  margin-top: 25px;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccdcd5;
+  border-radius: 8px;
+  font: inherit;
+}
+
+form button {
+  margin-top: 12px;
+}
+
+.registro {
+  background: #f1faf6;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.registro p {
+  margin: 7px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #60766c;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
